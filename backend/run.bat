@@ -1,0 +1,1 @@
+mvn -pl sxzp-server spring-boot:run

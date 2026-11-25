@@ -1,0 +1,83 @@
+@use './reset.scss';
+@use './variables.scss' as *;
+
+// 通用工具类
+.flex { display: flex; }
+.flex-center { display: flex; align-items: center; justify-content: center; }
+.flex-between { display: flex; align-items: center; justify-content: space-between; }
+.flex-start { display: flex; align-items: center; justify-content: flex-start; }
+.flex-end { display: flex; align-items: center; justify-content: flex-end; }
+.flex-column { display: flex; flex-direction: column; }
+.gap-sm { gap: $spacing-sm; }
+.gap-md { gap: $spacing-md; }
+.gap-lg { gap: $spacing-lg; }
+
+.mb-8 { margin-bottom: $spacing-sm; }
+.mb-16 { margin-bottom: $spacing-md; }
+.mb-24 { margin-bottom: $spacing-lg; }
+.mt-8 { margin-top: $spacing-sm; }
+.mt-16 { margin-top: $spacing-md; }
+.mt-24 { margin-top: $spacing-lg; }
+
+.text-primary { color: $text-primary; }
+.text-regular { color: $text-regular; }
+.text-secondary { color: $text-secondary; }
+.text-danger { color: $danger; }
+.text-success { color: $success; }
+.text-warning { color: $warning; }
+.text-info { color: $info; }
+
+.text-bold { font-weight: 600; }
+.text-sm { font-size: 12px; }
+.text-md { font-size: 14px; }
+.text-lg { font-size: 16px; }
+.text-xl { font-size: 18px; }
+.text-xxl { font-size: 22px; }
+
+// 卡片
+.card-section {
+  background: $bg-white;
+  border-radius: $border-radius-base;
+  padding: $spacing-lg;
+  box-shadow: $box-shadow-light;
+}
+
+// 页面通用容器
+.page-container {
+  min-height: calc(100vh - 60px);
+  padding: $spacing-lg;
+}
+
+// 表单底部操作区
+.form-actions {
+  margin-top: $spacing-lg;
+  display: flex;
+  justify-content: center;
+  gap: $spacing-md;
+}
+
+// 表格操作列按钮间距
+.table-actions {
+  display: flex;
+  gap: $spacing-xs;
+  justify-content: center;
+}
+
+// 过滤栏
+.filter-bar {
+  background: $bg-white;
+  padding: $spacing-md $spacing-lg;
+  border-radius: $border-radius-base;
+  margin-bottom: $spacing-md;
+  display: flex;
+  align-items: center;
+  gap: $spacing-md;
+  flex-wrap: wrap;
+}
+
+// 空数据图标
+.empty-large {
+  padding: $spacing-xl 0;
+  text-align: center;
+  color: $text-secondary;
+}
